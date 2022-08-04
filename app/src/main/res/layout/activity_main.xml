@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:layout_marginTop="150px"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/logo"
+        android:backgroundTint="@color/colorAccent2"
+        android:layout_marginTop="100px"
+        android:layout_marginHorizontal="150px"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/text"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_user_field" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginTop="50px"
+        android:layout_marginHorizontal="150px"
+        android:text="УЗНАТЬ ПОГОДУ"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:layout_marginTop="150px"
+        android:layout_below="@id/main_btn"
+        android:textSize="25sp" />
+</RelativeLayout>
